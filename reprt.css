@@ -1,6 +1,4 @@
-
-
-    body {
+  body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       background-color: #111827;
@@ -53,6 +51,24 @@ header img {
       transform: scale(1.1);
       box-shadow: 0 0 15px rgba(255, 115, 0, 0.8);
     }
+      .history-button {
+        background-color: #ff7300;
+      color: black;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 30px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: all 0.3s ease;
+      }
+      .history-button:hover {
+         transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255, 115, 0, 0.8);
+      }
+      .history{
+        display: flex; flex-direction: column; align-items: center;
+      }
 
     footer {
       background-color: #1f2937;
