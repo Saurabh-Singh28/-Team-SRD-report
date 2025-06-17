@@ -1,0 +1,59 @@
+  body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #111827;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* or 'cover' depending on your goal */
+  display: block;
+}
+
+
+    .content {
+      padding: 2em;
+    }
+
+    .animated-text {
+      font-size: 2em;
+      font-weight: bold;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+     .nav-button{
+     background-color: #ff7300;
+      color: rgb(255, 0, 0);
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin: 0.8em 0;
+      transition: all 0.3s ease;
+}
+ .nav-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255, 115, 0, 0.8);
+    }
+     .pager{
+        display: flex; flex-direction: column; align-items: center;
+      }
+      .pager{
+        background-color: darkslategray;
+
+      }
