@@ -1,79 +1,88 @@
-  body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #111827;
-      color: white;
-      text-align: center;
-    }
-
-    header {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #0f0f0f, #1a1a2e);
+  color: white;
+  text-align: center;
 }
 
 header img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* or 'cover' depending on your goal */
   display: block;
 }
 
+.content {
+  padding: 2em;
+}
 
-    .content {
-      padding: 2em;
-    }
+.animated-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  animation: fadeIn 2s ease-in-out;
+}
 
-    .animated-text {
-      font-size: 2em;
-      font-weight: bold;
-      animation: fadeIn 2s ease-in-out;
-    }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+.button-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5em;
+  margin-top: 2em;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
 
-    .mail-button {
-      background-color: #ff7300;
-     color: rgb(255, 255, 255);
-      border: none;
-      border-radius: 25px;
-      padding: 15px 40px;
-      font-size: 1rem;
-      cursor: pointer;
-      margin: 2em 0;
-      transition: all 0.3s ease;
-    }
+.btn-description {
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+  color: #ccc;
+}
 
-    .mail-button:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 15px rgba(255, 115, 0, 0.8);
-    }
-      .history-button {
-        background-color: #ff7300;
-      color: black;
-      border: none;
-      border-radius: 25px;
-      padding: 10px 30px;
-      font-size: 0.8rem;
-      cursor: pointer;
-      margin-bottom: 10px;
-      transition: all 0.3s ease;
-      }
-      .history-button:hover {
-         transform: scale(1.1);
-      box-shadow: 0 0 15px rgba(255, 115, 0, 0.8);
-      }
-      .history{
-        display: flex; flex-direction: column; align-items: center;
-      }
+.mail-button, .history-button {
+  background-color: transparent;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  border-radius: 30px;
+  padding: 15px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: 'Orbitron', sans-serif;
+}
 
-    footer {
-      background-color: #1f2937;
-      padding: 2em;
-      color: #aaa;
-      font-size: 0.9rem;
-    }
- 
+.mail-button:hover, .history-button:hover {
+  background-color: #00ffcc;
+  color: black;
+  box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+  transform: scale(1.1);
+}
+
+.history {
+  /* display: flex; */
+  .wdxl-lubrifont-jp-n-regular {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  justify-content: center;
+  margin-top: 1em;
+   background: rgba(255, 255, 255, 0.05);
+  padding: 1.5em;
+  margin-top: 2em;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1)
+}
+
+footer {
+  background-color: #1f2937;
+  padding: 2em;
+  color: #aaa;
+  font-size: 0.9rem;
+}
