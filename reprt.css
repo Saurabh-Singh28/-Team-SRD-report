@@ -86,3 +86,29 @@ footer {
   color: #aaa;
   font-size: 0.9rem;
 }
+h2{
+  color: #00ffcc;
+  font-family: 'Times New Roman', Times, serif;
+}
+.glow-text {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #00fff0; }
+  to { text-shadow: 0 0 20px #00fff0, 0 0 30px #00fff0; }
+}
+
+.color-cycle {
+  animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% { color: #ff0000; }
+  25% { color: #ff7300; }
+  50% { color: #00ffcc; }
+  75% { color: #00ff6a; }
+  100% { color: #ff009d; }
+  50% {color:blueviolet}
+}
+
