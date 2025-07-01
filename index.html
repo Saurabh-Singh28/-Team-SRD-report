@@ -30,7 +30,8 @@
 
     <!-- <li><a href="#">Team</a></li> -->
     <li><a href="https://saurabh-singh28.github.io/Report-History/">History</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#contact">Contact</a></li>
+
   </ul>
 </div>
 
@@ -70,6 +71,19 @@ Contact: <a href="mailto:sanataniking280@gmail.com">Email</a> | <a href="https:/
   </footer>
 
   <link rel="javascript" href="report.js">
+
+
+<section class="contact-section" id="contact">
+  <form action="https://formspree.io/f/meoknvdq" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+<!-- Javascript for sidebar -->
 <script>
   function toggleSidebar() {
     const sidebar = document.getElementById("sidebar");
@@ -83,6 +97,8 @@ Contact: <a href="mailto:sanataniking280@gmail.com">Email</a> | <a href="https:/
   if (mainReportLink && sidebarReportLink) {
     sidebarReportLink.href = mainReportLink.href;
   }
+
+
 
 </script>
 
