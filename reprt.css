@@ -278,3 +278,61 @@ h2{
   box-shadow: 0 0 15px #00faff, 0 0 25px #00faff, 0 0 35px #00faff;
   transform: scale(1.05);
 }
+
+/* Contact Section Styling */
+#contact {
+  padding: 50px 20px;
+  background: linear-gradient(to right, #0a0f1a, #1a1a2e);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section form {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px #00faff;
+}
+
+.contact-section button {
+  padding: 15px;
+  background-color: #00faff;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-section button:hover {
+  background-color: #00bccc;
+  transform: scale(1.05);
+}
