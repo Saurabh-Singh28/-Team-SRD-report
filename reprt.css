@@ -43,24 +43,61 @@ header img {
   color: #ccc;
 }
 
-.mail-button, .history-button {
-  background-color: transparent;
-  color: #00ffcc;
-  border: 2px solid #00ffcc;
-  border-radius: 30px;
+.futuristic-button {
+  display: inline-block;
   padding: 15px 40px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.4s;
-  font-family: 'Orbitron', sans-serif;
+  color: #00faff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(145deg, #0e0e10, #1a1a1f);
+  border: 2px solid #00faff;
+  border-radius: 8px;
+  position: relative;
+  letter-spacing: 2px;
+  box-shadow:
+    0 0 8px #00faff,
+    0 0 15px #00faff inset;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
 }
 
-.mail-button:hover, .history-button:hover {
-  background-color: #00ffcc;
-  color: black;
-  box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
-  transform: scale(1.1);
+.futuristic-button::before,
+.futuristic-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00faff;
+  border-radius: 10px;
+  top: -6px;
+  left: -6px;
+  z-index: -1;
+  opacity: 0.4;
+  transform: scale(1.05);
+  animation: flicker 2s infinite;
 }
+
+.futuristic-button::after {
+  top: 6px;
+  left: 6px;
+  transform: scale(0.95);
+  opacity: 0.3;
+  animation-delay: 1s;
+}
+
+.futuristic-button:hover {
+  box-shadow:
+    0 0 12px #00faff,
+    0 0 25px #00faff inset;
+  transform: scale(1.05);
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.6; }
+}
+
 
 .history {
   /* display: flex; */
