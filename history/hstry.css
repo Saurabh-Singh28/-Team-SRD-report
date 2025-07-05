@@ -1,0 +1,250 @@
+   body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+       header {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* or 'cover' depending on your goal */
+  display: block;
+}
+
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    #scroll-wrapper {
+      max-height: 80vh;
+      overflow-y: auto;
+      padding-right: 5px;
+      margin-bottom: 20px;
+    }
+
+    #scroll-wrapper::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    #scroll-wrapper::-webkit-scrollbar-thumb {
+      background: #ff8000;
+      border-radius: 6px;
+    }
+
+    #scroll-wrapper::-webkit-scrollbar-track {
+      background: #1e293b;
+    }
+
+    #report-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .report-entry {
+      background-color: #1e293b;
+      padding: 15px;
+      border-radius: 12px;
+      width: 95%;
+      max-width: 500px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+   .report-button {
+      background-color: #ff8000;
+      color: white;
+      padding: 12px 16px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+      margin: 2em 0;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      margin-bottom: 8px;
+      align-self: stretch;
+      text-align: center;
+    }
+
+    .report-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255, 115, 0, 0.8);
+    }
+
+    .report-desc {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      text-align: left;
+    }
+
+    footer {
+      padding: 20px 10px;
+      font-size: 0.95rem;
+      color: #94a3b8;
+    }
+
+    footer a {
+      color: #3b82f6;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .report-entry {
+        width: 100%;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p.subtitle {
+        font-size: 1rem;
+      }
+    }
+   /* Contact Section Styling */
+#contact {
+  padding: 50px 20px;
+  background: linear-gradient(to right, #0a0f1a, #1a1a2e);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section form {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px #00faff;
+}
+
+.contact-section button {
+  padding: 15px;
+  background-color: #00faff;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-section button:hover {
+  background-color: #00bccc;
+  transform: scale(1.05);
+}
+.button-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5em;
+  margin-top: 2em;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.btn-description {
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+  color: #ccc;
+}
+
+.futuristic-button {
+  display: inline-block;
+  padding: 15px 40px;
+  color: #00faff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(145deg, #0e0e10, #1a1a1f);
+  border: 2px solid #00faff;
+  border-radius: 8px;
+  position: relative;
+  letter-spacing: 2px;
+  box-shadow:
+    0 0 8px #00faff,
+    0 0 15px #00faff inset;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.futuristic-button::before,
+.futuristic-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00faff;
+  border-radius: 10px;
+  top: -6px;
+  left: -6px;
+  z-index: -1;
+  opacity: 0.4;
+  transform: scale(1.05);
+  animation: flicker 2s infinite;
+}
+
+.futuristic-button::after {
+  top: 6px;
+  left: 6px;
+  transform: scale(0.95);
+  opacity: 0.3;
+  animation-delay: 1s;
+}
+
+.futuristic-button:hover {
+  box-shadow:
+    0 0 12px #00faff,
+    0 0 25px #00faff inset;
+  transform: scale(1.05);
+}
