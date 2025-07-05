@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanatani IT CELL | Email Reports</title>
+<link rel="stylesheet" href="hstry.css">
+</head>
+<body>
+
+  <header>
+   <img src="fb cover pic.png" alt="Sanatani IT Cell Logo">
+  </header>
+  <header>
+       <h1>History of Emails of Sanatani IT CELL</h1>
+    <p class="subtitle">Unite Against Anti-Hindu Social Media Content, and help us Eradicate it.</p>
+  </header>
+<div class="button-section">
+      <p class="btn-description">⚠️ CLICK BELOW TO GO AUTOMATICALLY REPORT  PAGE</p>
+   
+       <a href="https://saurabh-singh28.github.io/-Team-SRD-report/"  id="report-link" >
+        <button class="futuristic-button">🚀 Send Report Mail</button>
+      </a>
+    </div>
+  <main>
+    <div id="scroll-wrapper">
+      <div id="report-container"></div>
+    <div style="margin-top: 20px;">
+      <button onclick="changePage(-1)" id="prevBtn" style="margin-right:10px;">Previous</button>
+      <button onclick="changePage(1)" id="nextBtn">Next</button>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    Created by Saurabh Singh & Team SRD • Contact for query:
+    <a href="mailto:sanataniking280@gmail.com">Email</a> |
+    <a href="https://t.me/Mr_Wizard_1">Telegram</a>
+  </footer>
+<section class="contact-section" id="contact">
+  <form action="https://formspree.io/f/meoknvdq" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+  <script>
+    const reports = [ 
+    //  { title: "03-07-2025/Youtube Comm.", link: "https://tinyurl.com/mjzycm8x", desc: "YouTube video comment sections reviewed and flagged." },
+      { title: "28-06-2025/Facebook hate grp", link: "https://tinyurl.com/352ybnvz", desc: "Facebok Group got hacked promoting communal tension & vulgarity." },
+      { title: "23-06-2025/Atheist of India", link: "https://tinyurl.com/4tdecm2u", desc: "Report sent to email group about anti-Hindu content." },
+      { title: "19-06-2025/Snow grp RPRT", link: "https://tinyurl.com/yc799k5b", desc: "Reported misleading content by  group of Snow." },
+      { title: "17-06-2025/RJPT HTRS/rpt", link: "https://tinyurl.com/5bzs55fx", desc: "Multiple hate posts flagged from Group of Rajput Haters ." },
+      { title: "15-06-2025/Insta acc./rpt", link: "https://tinyurl.com/2janhbrm", desc: "Reported offensive content of Insta account." },
+    
+      // { title: "09-06-2025/Offensive Reel", link: "#", desc: "A reel mocking Hindu beliefs." },
+      // { title: "08-06-2025/Twitter acc", link: "#", desc: "Spreading fake news under political disguise." },
+      // { title: "06-06-2025/Political page", link: "#", desc: "Communal hate by influencer page." },
+      // { title: "04-06-2025/Meme grp", link: "#", desc: "Toxic memes reported from group." },
+    ];
+
+    const container = document.getElementById("report-container");
+
+    let currentPage = 1;
+    const itemsPerPage = 10;
+
+    function renderPage(page) {
+      container.innerHTML = "";
+      const start = (page - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
+      const pageItems = reports.slice(start, end);
+
+      pageItems.forEach(report => {
+      const entry = document.createElement("div");
+      entry.className = "report-entry";
+
+      const btn = document.createElement("a");
+      btn.className = "report-button";
+      btn.href = report.link;
+      btn.target = "_blank";
+      btn.textContent = report.title;
+
+      const desc = document.createElement("div");
+      desc.className = "report-desc";
+      desc.textContent = report.desc;
+
+      entry.appendChild(btn);
+      entry.appendChild(desc);
+      container.appendChild(entry);
+      });
+
+      document.getElementById("prevBtn").style.display = page > 1 ? "inline-block" : "none";
+      document.getElementById("nextBtn").style.display = end < reports.length ? "inline-block" : "none";
+    }
+
+    function changePage(offset) {
+      currentPage += offset;
+      renderPage(currentPage);
+    }
+
+    renderPage(currentPage);
+  </script>
+</body>
+</html>
